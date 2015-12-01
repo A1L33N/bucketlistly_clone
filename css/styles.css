@@ -8,6 +8,7 @@ h2  {
   font-size: 3em;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h3 {
@@ -69,7 +70,7 @@ nav, li {
   position: relative;
   background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 6%,rgba(0,0,0,0) 20%,rgba(0,0,0,0.65) 72%,rgba(0,0,0,0.65) 100%),
     url("https://unsplash.it/1920/1080?image=231");
-  height: 80%;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,13 +114,11 @@ nav, li {
 
 /*rows*/
 
-.row, .single-column .two-column {
-  text-align: center;
+.single-column .two-column {
   width: 80%;
   margin: auto;
   display: center;
 }
-
 
 
 .row p {
@@ -130,6 +129,11 @@ nav, li {
 
 }
 
+.row-gray {
+  background-color: #f1f1f1;
+}
+
+/*single-column*/
 .row .single-column p {
   font-family: 'Lato', sans-serif;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -137,29 +141,34 @@ nav, li {
   font-style: italic;
   width:50%;
   margin: auto;
-
 }
 
 .single-column img {
+  display: block;
   margin-top: 30px;
-  margin-left: 0;
-  margint-right: 0;
-  width: 60%;
-
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
 /*two-column row*/
 .column1 {
-  width: 30%;
-  padding: none;
-  float: left
+  padding-left: none;
+  display: inline-block;
+  width: 40%;
+  margin-left: 10%;
+  padding-left: 2%;
+}
+
+.column1 h2 {
+  text-align: left;
 }
 
 .column2 {
-  width: 30%;
-
+  display: inline-block;
+  width: 40%;
   padding: none;
-  float: left
 }
