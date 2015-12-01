@@ -113,10 +113,11 @@ nav, li {
 
 /*rows*/
 
-.row, .single-column {
+.row, .single-column .two-column {
   text-align: center;
   width: 80%;
   margin: auto;
+  display: center;
 }
 
 
@@ -134,13 +135,31 @@ nav, li {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.5em;
   font-style: italic;
-  width:70%;
+  width:50%;
   margin: auto;
 
 }
 
 .single-column img {
-  margin: 30px;
+  margin-top: 30px;
+  margin-left: 0;
+  margint-right: 0;
+  width: 60%;
+
+
 }
 
-/*test*/
+
+/*two-column row*/
+.column1 {
+  width: 30%;
+  padding: none;
+  float: left
+}
+
+.column2 {
+  width: 30%;
+
+  padding: none;
+  float: left
+}
